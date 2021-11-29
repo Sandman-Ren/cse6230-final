@@ -1,1 +1,1 @@
-src/benchmark/measure_time_GPU_*
+src/benchmark/measure_time_GPU_*.pbs.[eo]*
