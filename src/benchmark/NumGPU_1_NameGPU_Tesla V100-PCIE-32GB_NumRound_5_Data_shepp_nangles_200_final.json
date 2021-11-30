@@ -1,0 +1,157 @@
+[
+{
+"method": "fdk",
+"image_size": 32,
+"nangles": 200,
+"average_time": 0.13808615682646633,
+"nRMSE": 90.66647963480075
+}
+,
+{
+"method": "ossart",
+"image_size": 32,
+"nangles": 200,
+"average_time": 13.077251935983076,
+"nRMSE": 84.62828756354169,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 32,
+"nangles": 200,
+"average_time": 1.3751185516361146,
+"nRMSE": 101.12418123858392,
+"niter": 5
+}
+,
+{
+"method": "fdk",
+"image_size": 64,
+"nangles": 200,
+"average_time": 0.15322746341116728,
+"nRMSE": 175.88914753371728
+}
+,
+{
+"method": "ossart",
+"image_size": 64,
+"nangles": 200,
+"average_time": 13.188329426990823,
+"nRMSE": 207.63585635742226,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 64,
+"nangles": 200,
+"average_time": 1.3871523714158684,
+"nRMSE": 258.5839460905071,
+"niter": 5
+}
+,
+{
+"method": "fdk",
+"image_size": 128,
+"nangles": 200,
+"average_time": 0.2152507970109582,
+"nRMSE": 347.4745990631267
+}
+,
+{
+"method": "ossart",
+"image_size": 128,
+"nangles": 200,
+"average_time": 13.922927673440427,
+"nRMSE": 513.9707503110836,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 128,
+"nangles": 200,
+"average_time": 1.681726726796478,
+"nRMSE": 656.7221115457274,
+"niter": 5
+}
+,
+{
+"method": "fdk",
+"image_size": 256,
+"nangles": 200,
+"average_time": 0.5327374811749905,
+"nRMSE": 704.2450272854657
+}
+,
+{
+"method": "ossart",
+"image_size": 256,
+"nangles": 200,
+"average_time": 21.885409082798287,
+"nRMSE": 1207.5261516549751,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 256,
+"nangles": 200,
+"average_time": 3.6232564182020726,
+"nRMSE": 1584.5155326061576,
+"niter": 5
+}
+,
+{
+"method": "fdk",
+"image_size": 512,
+"nangles": 200,
+"average_time": 2.0332379227969795,
+"nRMSE": 1583.2893662631398
+}
+,
+{
+"method": "ossart",
+"image_size": 512,
+"nangles": 200,
+"average_time": 83.94861861118116,
+"nRMSE": 2553.543460139195,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 512,
+"nangles": 200,
+"average_time": 17.861117217037826,
+"nRMSE": 3395.5687169819143,
+"niter": 5
+}
+,
+{
+"method": "fdk",
+"image_size": 1024,
+"nangles": 200,
+"average_time": 9.728416293812916,
+"nRMSE": 3175.655707125298
+}
+,
+{
+"method": "ossart",
+"image_size": 1024,
+"nangles": 200,
+"average_time": 564.0984258487821,
+"nRMSE": 4322.636301685614,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 1024,
+"nangles": 200,
+"average_time": 131.81850427701139,
+"nRMSE": 5787.7341899371795,
+"niter": 5
+}
+]
