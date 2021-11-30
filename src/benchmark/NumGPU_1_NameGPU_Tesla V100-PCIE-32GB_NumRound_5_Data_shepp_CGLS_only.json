@@ -1,0 +1,271 @@
+[
+{
+"method": "CGLS",
+"image_size": 32,
+"nangles": 50,
+"average_time": 1.5036673080176115,
+"nRMSE": 102.00360924673423,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 32,
+"nangles": 100,
+"average_time": 1.517155480198562,
+"nRMSE": 101.1673663674282,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 32,
+"nangles": 200,
+"average_time": 1.5768937928136437,
+"nRMSE": 101.12418123858392,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 32,
+"nangles": 400,
+"average_time": 1.6409319214057176,
+"nRMSE": 101.10522131531054,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 32,
+"nangles": 800,
+"average_time": 1.7650417807977647,
+"nRMSE": 101.10701246989927,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 64,
+"nangles": 50,
+"average_time": 1.6793230333831162,
+"nRMSE": 262.2563569739684,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 64,
+"nangles": 100,
+"average_time": 1.5346096579916775,
+"nRMSE": 258.9584555544204,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 64,
+"nangles": 200,
+"average_time": 1.5654576592147351,
+"nRMSE": 258.5839460905071,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 64,
+"nangles": 400,
+"average_time": 1.652367172576487,
+"nRMSE": 258.5655160271257,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 64,
+"nangles": 800,
+"average_time": 1.7653415631968528,
+"nRMSE": 258.57306393735513,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 128,
+"nangles": 50,
+"average_time": 1.6554842576384545,
+"nRMSE": 672.1280210437884,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 128,
+"nangles": 100,
+"average_time": 1.7470381787978113,
+"nRMSE": 658.2407841880439,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 128,
+"nangles": 200,
+"average_time": 1.8250734106171875,
+"nRMSE": 656.7221115457274,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 128,
+"nangles": 400,
+"average_time": 2.219213116634637,
+"nRMSE": 656.396192314198,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 128,
+"nangles": 800,
+"average_time": 2.7928057797718795,
+"nRMSE": 656.4750318868377,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 256,
+"nangles": 50,
+"average_time": 2.995161480968818,
+"nRMSE": 1639.0769883035491,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 256,
+"nangles": 100,
+"average_time": 3.4631265446078032,
+"nRMSE": 1591.9790180034151,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 256,
+"nangles": 200,
+"average_time": 4.039162339782342,
+"nRMSE": 1584.5155326061576,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 256,
+"nangles": 400,
+"average_time": 5.1953530622180555,
+"nRMSE": 1584.6116840704021,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 256,
+"nangles": 800,
+"average_time": 7.919849456986412,
+"nRMSE": 1584.6352288713888,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 512,
+"nangles": 50,
+"average_time": 12.880738951824606,
+"nRMSE": 3531.0901228619728,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 512,
+"nangles": 100,
+"average_time": 14.744965803809464,
+"nRMSE": 3414.4702528627527,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 512,
+"nangles": 200,
+"average_time": 18.438801576429977,
+"nRMSE": 3395.5687169819143,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 512,
+"nangles": 400,
+"average_time": 25.88360056001693,
+"nRMSE": 3394.3864915998192,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 512,
+"nangles": 800,
+"average_time": 41.42334584798664,
+"nRMSE": 3393.950300971077,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 1024,
+"nangles": 50,
+"average_time": 86.80491955881007,
+"nRMSE": 6031.747398201358,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 1024,
+"nangles": 100,
+"average_time": 104.60233625601977,
+"nRMSE": 5823.3808685694785,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 1024,
+"nangles": 200,
+"average_time": 133.68253065482713,
+"nRMSE": 5787.7341899371795,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 1024,
+"nangles": 400,
+"average_time": 185.10930663542823,
+"nRMSE": 5785.119225988855,
+"niter": 5
+}
+,
+{
+"method": "CGLS",
+"image_size": 1024,
+"nangles": 800,
+"average_time": 292.52507062680087,
+"nRMSE": 5784.621914458301,
+"niter": 5
+}
+]
