@@ -1,1 +1,3 @@
+.idea/
+
 src/benchmark/measure_time_GPU_*.pbs.[eo]*

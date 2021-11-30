@@ -32,3 +32,60 @@ cd TIGRE
 cd Python
 python3 setup.py install --user
 ```
+
+## TODO: Instructions for running the benchmark computations
+
+## Benchmarking TIGRE
+
+We benchmarked TIGRE on generated Shepp-Logan Phantoms of varying image sizes using the three methods implemented in TIGRE:
+- FDK
+- OS-SART
+- CGLS
+
+On coc-ice GPU nodes with 1, 2, 3 and 4 GPUs. We provide a Jupyter Notebook where we used Matplotlib to generate graphs
+of different configurations versus the averaged running time and the normalized RMSE of each method. Due to the large 
+number of configurations we generated, below we pick a few representative examples to demonstrate our benchmarking results.
+The full set of graphs can be found under [src/figures/](src/figures/)
+
+Of our configurations, the number of GPUs on each node is the variable we changed that affected the performance of TIGRE.
+We benchmarked different algorithms implemented in TIGRE on nodes with 1, 2, 3 and 4 GPUs. We find that the number of GPUs
+reduced the average running time of all the algorithms on larger image sizes. This fits our expectation as parallelizing
+the computations on multiple GPUs should speed up the overall computation for all algorithms. On smaller image sizes, having
+more GPUs did not have a significant impact on running time. In some such cases, this even resulted in degraded running time.
+We believe that this is because the time for data transfer between GPUs and CPU dominated the running time for smaller image
+sizes.
+
+
+![Figure 1: Averaged Runtime of three methods on different number of GPUs
+](src/figures/comparison/Number%20of%20angles.200-Image%20Size.1024-Average%20Time.jpg)
+
+*Figure 1: Averaged Runtime of three methods on different number of GPUs*
+
+![Figure 2: Averaged Runtime of three methods on different number of GPUs
+](src/figures/comparison/Number%20of%20angles.200-Image%20Size.1024-nRMSE.jpg)
+
+*Figure 2: Normalized RMSE of  the results of the hree methods on different number of GPUs*
+
+![Figure 3: Normalized RMSE of the three methods on different image sizes](src/figures/comparison/Number%20of%20angles.200-Number%20of%20GPUs.4-Average%20Time.jpg)
+
+*Figure 3: Normalized RMSE of the three methods on different image sizes*
+
+![Figure 4: Normalized RMSE of the three methods on different image number of angles](src/figures/comparison/Number%20of%20angles.200-Number%20of%20GPUs.4-nRMSE.jpg)
+
+*Figure 4: Normalized RMSE of the three methods on different image number of angles*
+
+![Figure: Averaged running time of the three methods on different image number of angles](src/figures/comparison/Number%20of%20GPUs.4-Image%20Size.256-Average%20Time.jpg)
+
+*Figure 5: Averaged running time of the three methods on different image number of angles*
+
+![Figure: Normalized RMSE of the three methods on different image number of angles](src/figures/comparison/Number%20of%20GPUs.4-Image%20Size.256-nRMSE.jpg)
+
+*Figure 6: Normalized RMSE of the three methods on different image number of angles*
+
+![Figure: Average running time of the three methods on varying image sizes](src/figures/Number%20of%20angles.100-Number%20of%20GPUs.4-Average%20Time.jpg)
+
+*Figure 7: Average running time of the three methods on varying image sizes*
+
+![Figure: Normalized RMSE of the three methods on varying image sizes, combined](src/figures/Number%20of%20angles.100-Number%20of%20GPUs.4-nRMSE.jpg)
+
+*Figure 8: Averaged running time of the three methods on different image number of angles*
