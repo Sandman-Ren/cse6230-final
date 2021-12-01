@@ -1,5 +1,8 @@
 #PBS -q coc-ice-gpu
 #PBS -l nodes=1:ppn=24:gpus=4
+#PBS -l walltime=02:00:00
+
+
 
 cd $PBS_O_WORKDIR
 
@@ -15,4 +18,4 @@ module load anaconda3
 module load cuda/10.2
 
 
-python3 measure_time.py
+python3 measure_time_nangles_200.py
