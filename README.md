@@ -1,6 +1,7 @@
 # TIGRE: a MATLAB-GPU toolbox for CBCT image reconstruction
 
-The Tomographic Iterative GPU-based Reconstruction Toolbox (TIGRE) is an open-source toolbox for fast and accurate 3D tomographic reconstruction for any geometry. TIGRE focuses on iterative algorithms from a variety of families for improved image quality and leverages the parallel computation capabilities offered by (multiple) GPUs. The goal of the TIGRE toolbox is to provide a fast high-level abstraction of iterative algorithms for image reconstruction in Python and MATLAB while utilizing the performance advantage provided by CUDA.
+The Tomographic Iterative GPU-based Reconstruction Toolbox (TIGRE) is designed to reduce the gap between image reconstruction research and the end users of tomographic
+images. It is an open-source toolbox for fast and accurate 3D tomographic reconstruction for any geometry using higher level abstraction of MATLAB with the lower performance of CUDA. TIGRE focuses on iterative algorithms from a variety of families for improved image quality and leverages the parallel computation capabilities offered by (multiple) GPUs. The goal of the TIGRE toolbox is to provide a fast high-level abstraction of iterative algorithms for image reconstruction in Python and MATLAB while utilizing the performance advantage provided by CUDA.
 
 ## Project Setup
 
@@ -33,8 +34,6 @@ cd Python
 python3 setup.py install --user
 ```
 
-## TODO: Instructions for running the benchmark computations
-
 ## Benchmarking TIGRE
 
 We benchmarked TIGRE on generated Shepp-Logan Phantoms of varying image sizes using the three methods implemented in TIGRE:
@@ -55,6 +54,9 @@ more GPUs did not have a significant impact on running time. In some such cases,
 We believe that this is because the time for data transfer between GPUs and CPU dominated the running time for smaller image
 sizes.
 
+## TODO: Instructions for running the benchmark computations
+
+## Benchmark Result
 
 ![Figure 1: Averaged Runtime of three methods on different number of GPUs
 ](src/figures/comparison/Number%20of%20angles.200-Image%20Size.1024-Average%20Time.jpg)
@@ -89,3 +91,5 @@ sizes.
 ![Figure: Normalized RMSE of the three methods on varying image sizes, combined](src/figures/Number%20of%20angles.100-Number%20of%20GPUs.4-nRMSE.jpg)
 
 *Figure 8: Averaged running time of the three methods on different image number of angles*
+
+## TODO: Figure Result Explaination
