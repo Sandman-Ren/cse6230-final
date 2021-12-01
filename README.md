@@ -77,7 +77,14 @@ The figure 5 shows that the runtime increases as the number of angle increases. 
 ### Methods
 In figure 7 and 8, we are comparing how different methods affect the runtime or nRMSE as the image size increase while keep all other variables the same value. Mainly, we want to see how does FDK method different from the other two methods because the OS-SART and CGLS are considered as iterative methods but the FDK is not. From the result, FDK consistently achieves a lower running time and nRMSE score comparing to both of the iterative methods regradless of the image size. This shows that FDK out-perfrom the iterative methods based on our project setting.
 
-## TODO: Instructions for running the benchmark computations
+## Instructions for running the benchmark computations
+
+To get the benchmark results, first, install TIGRE with the instructions above. Second, login to the coc-ice login node, under [src/benchmark/](src/benchmark/) run the benchmark script. 
+```bash
+cd src/benchmark/
+bash benchmark_job.sh
+```
+In `benchmark_job.sh`, we submit 8 different jobs separately to have the computation done within the 2-hours wall-time limit. The generated json files are saved under [src/benchmark/](src/benchmark/) as well.
 
 ## Benchmark Result
 
