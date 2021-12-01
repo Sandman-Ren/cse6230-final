@@ -37,9 +37,12 @@ python3 setup.py install --user
 ## Benchmarking TIGRE
 
 We benchmarked TIGRE on generated Shepp-Logan Phantoms of varying image sizes using the three methods implemented in TIGRE:
-- FDK
-- OS-SART
-- CGLS
+- FDK - OS-SART - CGLS
+
+There are two evaluation features for our project: runtime of the algorithm and the normalized root-mean-square deviation(nRMSE). 
+With three different methods, the runtime benchmark allow us to find out which method could construct image in the shortest time. The nRMSE benchmark is a way to test the quality of output image. Based on the introduction of TIGRE, it is mainly used to reconstruct tomographic images. The current medical industry and applications are looking for a faster reconstruction and scanning which could lead to faster tumours targetting. Additionally, the quality of the image is also essential as a more clear and accurate image could lead to higher accuracy for targetting potential issues.
+
+
 
 On coc-ice GPU nodes with 1, 2, 3 and 4 GPUs. We provide a Jupyter Notebook where we used Matplotlib to generate graphs
 of different configurations versus the averaged running time and the normalized RMSE of each method. Due to the large 
