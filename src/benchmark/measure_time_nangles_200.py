@@ -13,9 +13,10 @@ from tigre.utilities.Measure_Quality import Measure_Quality
 rounds = 5
 image_sizes = (32, 64, 128, 256, 512, 1024)
 dDetector_list = (6.4, 3.2, 1.6, 0.8, 0.4, 0.2)
-nangles_list = (50, 100, 200, 400, 800) # TODO: not sure how to set this number. 
-niter = 5 # TODO: not sure how to set this number. 
 
+niter = 5 
+
+nangles_list = (200,)
 
 gpuids = gpu.getGpuIds(gpu.getGpuNames()[0])
 print(gpuids)
@@ -25,8 +26,7 @@ print(type(gpuids))
 
 num_gpu = len(gpuids)
 name_gpu = gpuids.name
-measure_file_name = f"NumGPU_{num_gpu}_NameGPU_{name_gpu}_NumRound_{rounds}_Data_shepp.json"
-print('measure_file_name',measure_file_name)
+measure_file_name = f"data/NumGPU_{num_gpu}_NameGPU_{name_gpu}_NumRound_{rounds}_Data_shepp_nangles_200_final.json"
 
 
 def write_output(method, image_size, nangles, nRMSE, average_time, niter=None,is_last=False):
@@ -48,6 +48,8 @@ def write_output(method, image_size, nangles, nRMSE, average_time, niter=None,is
 
 with open(measure_file_name, 'w') as fout:
     fout.write('[\n')
+
+
 for idx, image_size in enumerate(image_sizes):
     phatom = sl3d.shepp_logan_3d(size_out=image_size)
     for nangles in nangles_list:
@@ -86,6 +88,7 @@ for idx, image_size in enumerate(image_sizes):
         elapsed_time = end_time - start_time
         average_time = elapsed_time / rounds
         print(f'method: ossart, image size: {image_size:<4},  average time: {average_time}')    
+
         write_output(method='ossart', image_size=image_size, nangles=nangles, nRMSE=Measure_Quality(ossartout, phatom, ["nRMSE"]),average_time=average_time, niter=niter)
 
         # CGLS
